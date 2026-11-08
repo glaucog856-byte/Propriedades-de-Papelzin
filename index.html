@@ -6,22 +6,17 @@
   <title>Propriedades de Papelzin</title>
   <style>
     * {
-  font-family: "Comic Neue", cursive !important;
-
-}
-    * {
+      font-family: "Comic Neue", cursive !important;
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: "Comic Neue", cursive, sans-serif;
-
       transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
     }
 
     /* MODO CLARO (Default): Fundo Laranja Pastel / Texto Azul Complementar */
     :root {
       --bg-color: #ffe5d9;          /* Laranja pastel suave */
-      --card-bg: #ffd7ba;           /* Laranja pastel um pouco mais escuro */
+      --card-bg: #ffd7ba;            /* Laranja pastel um pouco mais escuro */
       --text-color: #1a4968;        /* Azul escuro pastel/complementar */
       --accent-color: #2b74a4;      /* Azul vibrante complementar */
       --border-color: #f4acb7;      /* Borda pastel */
@@ -30,7 +25,7 @@
     /* MODO ESCURO: Inverte o contraste mantendo a paleta complementar */
     [data-theme="dark"] {
       --bg-color: #0f2330;          /* Azul escuro profundo */
-      --card-bg: #163244;           /* Azul médio escuro */
+      --card-bg: #163244;            /* Azul médio escuro */
       --text-color: #ffd7ba;        /* Laranja pastel complementar */
       --accent-color: #ffb5a7;      /* Laranja claro pastel */
       --border-color: #2b74a4;      /* Borda azul pastel */
@@ -114,7 +109,7 @@
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       line-height: 1.5;
     }
 
@@ -124,11 +119,24 @@
     }
 
     .glossary-list li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     strong {
       color: var(--accent-color);
+    }
+
+    /* Estilo para os parágrafos de explicação */
+    /* Estilo para os parágrafos de explicação (Verde-água pastel) */
+    p.descricao {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: #2a7b76; /* Verde-água para o modo claro */
+    }
+
+    /* Verde-água pastel para quando o modo escuro estiver ligado */
+    [data-theme="dark"] p.descricao {
+      color: #86e3ce;
     }
 
     footer {
@@ -149,38 +157,92 @@
     <section>
       <h2>Filmes:</h2>
       <ul>
-        <li>A Era Fundamental de um Furry no E.F;</li>
-        <li>A Realidade de um Furry no E.M;</li>
-        <li>A Realidade BROCHANTE de um Furry Universitário.</li>
+        <li>
+          A Era Fundamental de um Furry no E.F;
+          <p class="descricao">Um filme sobre a realidade (spoiler: Não muito boa) de quando ele estudava no Ensino Fundamental, +/- 2020-2025 / 4°-9° ano. Baseado em fatos de seu D.E I e o D.E II + Os conteúdos estudados, para uma experiência cinematográfica mais realista.</p>
+        </li>
+        <li>
+          A Realidade de um Furry no E.M;
+          <p class="descricao"></p>
+        </li>
+        <li>
+          A Realidade BROCHANTE de um Furry Universitário.
+          <p class="descricao"></p>
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Séries:</h2>
       <ul>
-        <li>SN-Nd2500 (Sentimentos Não-Nomeados de 2500);</li>
-        <li>Onde está a ordem cronológica?</li>
+        <li>
+          SN-Nd2500 (Sentimentos Não-Nomeados de 2500);
+          <p class="descricao"></p>
+        </li>
+        <li>
+          Onde está a ordem cronológica?
+          <p class="descricao"></p>
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Nomenclaturas / Outros:</h2>
       <ul class="glossary-list">
-        <li><strong>D.E</strong> = Diário Escolar</li>
-        <li><strong>D.D</strong> = Diário Doméstico</li>
+        <li>
+          <strong>D.E</strong> = Diário Escolar
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>D.D</strong> = Diário Doméstico
+          <p class="descricao"></p>
+        </li>
         <br>
-        <li><strong>D.E I</strong> = Diário Escolar 1 / Primeiro Diário Escolar</li>
-        <li><strong>D.E II</strong> = Diário Escolar 2 / Segundo Diário Escolar</li>
-        <li><strong>D.E III</strong> = Diário Escolar 3 / Terceiro Diário Escolar</li>
-        <li><strong>D.D I</strong> = Diário Doméstico 1 / Primeiro Diário Doméstico</li>
+        <li>
+          <strong>D.E I</strong> = Diário Escolar 1 / Primeiro Diário Escolar
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>D.E II</strong> = Diário Escolar 2 / Segundo Diário Escolar
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>D.E III</strong> = Diário Escolar 3 / Terceiro Diário Escolar
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>D.D I</strong> = Diário Doméstico 1 / Primeiro Diário Doméstico
+          <p class="descricao"></p>
+        </li>
         <br>
-        <li><strong>Cromalogia:</strong> Estudo das Cores (blending, layering + colorir correto)</li>
-        <li><strong>Cenologia:</strong> Estudos dos Cenários</li>
-        <li><strong>Sematologia:</strong> Estudo das Poses</li>
-        <li><strong>Prosopologia / Prosopomatologia:</strong> Estudo das expressões faciais</li>
-        <li><strong>Khrematologia:</strong> Estudo dos Objetos</li>
-        <li><strong>Bromotologia:</strong> Estudo dos Alimentos</li>
-        <li><strong>Hylologia:</strong> Estudo da Matéria, Substâncias.</li>
+        <li>
+          <strong>Cromalogia:</strong> Estudo das Cores (blending, layering + colorir correto)
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Cenologia:</strong> Estudos dos Cenários
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Sematologia:</strong> Estudo das Poses
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Prosopologia / Prosopomatologia:</strong> Estudo das expressões faciais
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Khrematologia:</strong> Estudo dos Objetos
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Bromotologia:</strong> Estudo dos Alimentos
+          <p class="descricao"></p>
+        </li>
+        <li>
+          <strong>Hylologia:</strong> Estudo da Matéria, Substâncias.
+          <p class="descricao"></p>
+        </li>
       </ul>
     </section>
   </main>
